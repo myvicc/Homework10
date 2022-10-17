@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Homework10</title>
 </head>
 <body>
+<script>
+    // Вивести числа від 20 до 30 через пропуск, використовуючи крок 0,5 (20 20,5 21 21,5….)
+    let result = "";
+    for (let i = 20; i <= 30; i+= 0.5) {
+        result =`${result} ${i}`;
+    }
+    alert(result);
 
+    // Один долар коштує 27 гривень. Вивести дані з розрахунком вартості 10, 20, 30... 100 доларів
+    let doll = 27;
+    let calc = "";
+    for (let i = 10; i <= 100; i += 10) {
+       calc = calc === "" ? `${doll * i}` :`${calc}, ${doll * i}`;
+    }
+    alert(calc);
+
+    // Дане ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N
+    let num = 40;
+    let result1 ="";
+    for (let i = 1; i <= 100; i++) {
+        if (i * i <= num) {
+            result1 = result1 === "" ? `${i}` :`${result1}, ${i}`;
+        }
+    }
+    alert(result1);
+
+</script>
 </body>
 </html>
