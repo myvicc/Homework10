@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Homework10</title>
 </head>
 <body>
+<script>
+    //Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе)
+    const num = 17;
+    let result = false;
+    for (let i = 2; i < num; i++) {
+       if (num % i === 0) {
+           result = true;
+       }
+    }
+    alert(result);
 
+    //Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна)
+    const number = 9;
+    let result1 = false;
+    for (let i = 0; i < number; i++) {
+        if (Math.pow(3, i) === number) {
+            result1 = true;
+        }
+    }
+    alert(result1);
+
+
+</script>
 </body>
 </html>
